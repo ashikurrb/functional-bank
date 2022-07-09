@@ -6,10 +6,10 @@ document.getElementById('login-submit').addEventListener('click', function () {
     const passwordField = document.getElementById('user-password');
     const userPassword = passwordField.value;
 
-    if (userEmail == 'ashik.fidato@gmail.com' && userPassword == 'ashik') {
+    if (userEmail == 'ashikurrb85@gmail.com' && userPassword == '12345') {
         window.location.href = 'banking.html'
     } else {
-        console.log('Invalid User');
+        alert('Invalid User');
     }
 })
 
