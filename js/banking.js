@@ -47,7 +47,7 @@ document.getElementById('deposit-button').addEventListener('click', function () 
 document.getElementById('withdraw-button').addEventListener('click', function () {
     const withdrawAmount = getInputValue('withdraw-input')
     const currentBalence = getCurrentBalence();
-    if (withdrawAmount > 0 && currentBalence) {
+    if (withdrawAmount > 0 && withdrawAmount < currentBalence) {
         updateTotalField('withdraw-total', withdrawAmount);
         updateBalence(withdrawAmount, false);
     } else {
